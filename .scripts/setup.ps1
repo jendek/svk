@@ -4,7 +4,7 @@ Param(
   [String]$AzureLocation,
   [String]$AzureSubscriptionId,
   [String]$AzureTenantId,
-  [ValidateLength(4, 17)]
+  [ValidateLength(3, 17)]
   [String]$ProjectName,
   [String]$AzureSqlLogin = "SqlAdmin"
 )
@@ -39,7 +39,7 @@ if (-not $GitHubRepositoryName) {
 }
 
 if (-not $AzureLocation) {
-  $AzureLocation = "australiaeast"
+  $AzureLocation = "westEurope"
 }
 
 if (-not $AzureSubscriptionId) {
