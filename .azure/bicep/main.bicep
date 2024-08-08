@@ -264,7 +264,7 @@ resource applicationInsights 'Microsoft.Insights/components@2020-02-02' = {
 
 resource sqlServer 'Microsoft.Sql/servers@2021-02-01-preview' = {
   name: sqlServerName
-  location: location
+  location: 'North Europe'
   properties: {
     administratorLogin: sqlAdministratorUsername
     administratorLoginPassword: sqlAdministratorPassword
@@ -274,7 +274,7 @@ resource sqlServer 'Microsoft.Sql/servers@2021-02-01-preview' = {
 resource sqlDatabase 'Microsoft.Sql/servers/databases@2021-02-01-preview' = {
   parent: sqlServer
   name: sqlDatabaseName
-  location: location
+  location: 'North Europe'
   sku: sqlDatabaseSku
 }
 
