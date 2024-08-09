@@ -1,5 +1,6 @@
 @description('The location into which your Azure resources should be deployed.')
 param location string = resourceGroup().location
+param location2 string = 'North Europe'
 
 @description('Select the type of environment you want to provision. Allowed values are Production, Staging, and Development.')
 @allowed([
