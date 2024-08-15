@@ -1,6 +1,8 @@
 <body>
-  <app-nav-menu></app-nav-menu>
-  <main class="container">
-    <router-outlet></router-outlet>
+  <main class="d-flex">
+    <app-nav-menu></app-nav-menu>
+    <div class="content-container flex-grow-1">
+      <router-outlet></router-outlet>
+    </div>
   </main>
 </body>
